@@ -11,13 +11,13 @@ JOBS=[
     },
         {
         'id':1,
-        'title':'Data Analyst',
+        'title':'Backend Developer',
         'location':'Delhi,India',
         'salary':'Rs. 15,000'
     },
         {
         'id':1,
-        'title':'front end developer',
+        'title':'frontend developer',
         'location':'Delhi,India',
         'salary':'Rs. 18,000'
     },
