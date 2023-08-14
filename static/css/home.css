@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap');
+
+h1{
+  text-align: center;
+  text-transform: capitalize;
+  font-family: 'EB Garamond', serif;
+}
+
+.img{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+
+}
+h2,h4{
+  text-align: center;
+  text-transform: capitalize;
+  font-family: 'EB Garamond', serif;
+}
+p{
+  font-size: 18px;
+  font-family: 'EB Garamond', serif;
+
+}
+#contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  width: 15em;
+  height: 50px;
+  
+}
+
+.apply_btn{
+  width: 10em;
+}
