@@ -1,14 +1,14 @@
 # gunicorn.conf.py
 
 # The address and port where Gunicorn should bind
-bind = '0.0.0.0:8000'  # Binds to all available network interfaces on port 8000
+bind = '0.0.0.0:9000'  # Binds to all available network interfaces on port 8000
 
 # Number of worker processes
 workers = 4  # You can adjust this based on your server's resources
 
 # The maximum number of simultaneous client connections
 # (This should be a reasonably high number)
-worker_connections = 1000
+worker_connections = 1100
 
 # The user and group that the server process should run as
 # user = 'yourusername'
