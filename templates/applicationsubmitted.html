@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>application submittef</title>
+  {%include 'bootstrap.html'%}
+</head>
+<body>
+    {% extends 'nav.html' %}
+
+    {% block navbar_links %}
+      <li><a href="/" class="nav-link px-2 link-secondary">Home</a></li>
+    {% endblock %}
+    {% block content %}
+  <div class="mt-5">
+    <h1 class="text-$red-500">Your application for {{job['title']}} has been submitted</h1>
+    <h4>full name</h4>
+    <p class="text-center" >{{application['full_name']}}</p>
+    <h4>email</h4>
+    <p class="text-center">{{application['email']}}</p>
+    <h4>linkedin url</h4>
+    <p class="text-center">{{application['linkedinurl']}}</p>
+    <h4>work experience</h4>
+    <p class="text-center">{{application['workexperience']}}</p>
+  </div>
+  {% endblock %}
+
+  
+</body>
+</html>
