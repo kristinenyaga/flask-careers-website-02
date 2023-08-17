@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{job['title']}}</title>
+  {%include 'bootstrap.html'%}
+</head>
+<body>
+    {% extends 'nav.html' %}
+
+    {% block navbar_links %}
+      <li><a href="/" class="nav-link px-2 link-secondary">Home</a></li>
+
+    {% endblock %}
+    {% block content %}
+
+  <div class="container mt-5 ">
+  <h3 class="fs-2">
+    {{job['title']}}
+  </h3>
+  <p class="text-center font-medium fs-4">Location
+    :<br/>{{job['location']}}</p>
+  <p class="text-center fs-4">Salary: <br/>{{job['currency']}}{{job['salary']}}</p>
+  <h5 class="fs-4">Requirements</h5>
+  <ol>
+   {%for requirement in requirements%}
+   <li>{{requirement}}</li>
+   {%endfor%}
+  </ol>
+  <h5 class="fs-4">Responsibilities</h5>
+  <ol>
+   {%for responsibility in responsibilities%}
+   <li>{{responsibility}}</li>
+   {%endfor%}
+  </ol>
+  {%include 'applicationform.html'%}
+  </div>
+  {%include 'footer.htm'%}
+{% endblock %}
+
+
+  
+  
+</body>
+</html>
