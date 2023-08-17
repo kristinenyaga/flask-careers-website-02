@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <!-- meta tags and title here -->
 </head>
 <body>
   <div class="container">
@@ -15,19 +13,17 @@
       </div>
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-        <li><a href="#header" class="nav-link px-2">About</a></li>
-        <li><a href="#jobs" class="nav-link px-2">Jobs</a></li>
-        <li><a href="#contact" class="nav-link px-2">Contact</a></li>
+        {% block navbar_links %}{% endblock %}
       </ul>
 
       <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary ">Contact Us</button>
-
+        <button type="button" class="btn btn-outline-primary">Contact Us</button>
       </div>
     </header>
   </div>
-    <div style="height: 60px;"></div>
-
+  <div style="height: 60px;"></div>
+  
+  <!-- Content block to be replaced by extending templates -->
+  {% block content %}{% endblock %}
 </body>
 </html>
